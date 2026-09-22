@@ -43,3 +43,4 @@ Status: research complete; MVP deliberately not started pending founder review o
 | 2026-09-22 | MVP build | 0 | 0 | 0 | ₹0 | Restaurant offer approved. Landing page and interactive sample menu built locally; enquiry form is now connected to the owner-provided inbox. Publication awaits a usable GitHub publishing route. |
 | 2026-09-22 | Publication | 0 | 0 | 0 | ₹0 | MVP pushed to https://github.com/EshtechZ/menumint with an automated GitHub Pages deployment workflow. GitHub Pages publishing source still needs to be enabled by the account owner. |
 | 2026-09-22 | Publication fix | 0 | 0 | 0 | ₹0 | GitHub Actions deployment failed at Pages configuration before artifact upload. Reconfigured repository for simpler Pages deployment from the `main` branch root. |
+| 2026-09-22 | Funnel live | 0 | 0 | 0 | ₹0 | Live page confirmed with HTTP 200. Added per-outreach source capture and a seven-business, evidence-based prospect ledger; no outreach has yet been sent. |
