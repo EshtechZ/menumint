@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A fast mobile menu and QR code that routes restaurant orders directly to WhatsApp." />
+    <title>MenuMint — direct orders, without marketplace commission</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <nav class="nav" aria-label="Main navigation">
+        <a class="wordmark" href="/">Menu<span>Mint</span></a>
+        <a class="nav-link" href="#pilot">See the pilot offer</a>
+      </nav>
+
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">For independent cafés & restaurants</p>
+          <h1>Make every table a direct-order channel.</h1>
+          <p class="lede">A fast, mobile menu with a QR code and a ready-to-send WhatsApp order—built for your restaurant in 48 hours.</p>
+          <div class="actions">
+            <a class="button primary" href="demo/">Open the live demo <span aria-hidden="true">→</span></a>
+            <a class="button secondary" href="#pilot">View pilot details</a>
+          </div>
+          <p class="microcopy">No app. No marketplace commission. Works on any phone.</p>
+        </div>
+        <div class="phone-wrap" aria-label="Example mobile menu">
+          <div class="phone">
+            <div class="notch"></div>
+            <div class="phone-screen">
+              <div class="sample-head"><span>the corner table</span><small>All-day kitchen</small></div>
+              <div class="sample-pills"><b>Popular</b><span>Breakfast</span><span>Drinks</span></div>
+              <div class="sample-item"><div><strong>Truffle mushroom toast</strong><small>Herbs, sourdough, parmesan</small></div><b>₹349</b></div>
+              <div class="sample-item"><div><strong>Paneer tikka bowl</strong><small>Charred veg, mint rice</small></div><b>₹399</b></div>
+              <div class="sample-item"><div><strong>Cold brew tonic</strong><small>Single-origin coffee</small></div><b>₹220</b></div>
+              <div class="order-bar">Order on WhatsApp <span>→</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="proof-strip" aria-label="Benefits">
+        <p><b>One scan</b><span>opens your menu</span></p>
+        <p><b>One tap</b><span>starts an order on WhatsApp</span></p>
+        <p><b>One link</b><span>for Google, Instagram & tables</span></p>
+      </section>
+
+      <section class="problem">
+        <div>
+          <p class="eyebrow">Keep the customer relationship</p>
+          <h2>Guests already have WhatsApp. Your menu should meet them there.</h2>
+        </div>
+        <p class="body-copy">A printed PDF is hard to update. Food apps take a cut. A MenuMint page gives guests a clean menu on their phone, then hands the conversation and order directly to your team.</p>
+      </section>
+
+      <section class="steps">
+        <article><span>01</span><h3>Send your menu</h3><p>PDF, photo, spreadsheet, or existing web link—whatever you have.</p></article>
+        <article><span>02</span><h3>We build your page</h3><p>Your branded mobile menu, WhatsApp order message, and a QR code.</p></article>
+        <article><span>03</span><h3>Put it everywhere</h3><p>Use the QR at tables and the same link on Google and Instagram.</p></article>
+      </section>
+
+      <section class="demo-callout">
+        <div><p class="eyebrow">Try it before you decide</p><h2>Tap around a working sample menu.</h2><p>See the exact customer experience: browse, choose, and start a WhatsApp order.</p></div>
+        <a class="button primary" href="demo/">Try the sample menu <span aria-hidden="true">→</span></a>
+      </section>
+
+      <section class="pilot" id="pilot">
+        <div class="pilot-intro"><p class="eyebrow">Founding pilot</p><h2>Your restaurant’s direct-order page for ₹2,999.</h2><p>For the first five independent restaurants. One fixed price; no subscription during the pilot.</p></div>
+        <div class="offer-card">
+          <p class="price">₹2,999 <span>one-time</span></p>
+          <ul>
+            <li>Branded, mobile-first menu page</li>
+            <li>Table QR code and shareable menu link</li>
+            <li>WhatsApp-ready order message</li>
+            <li>Up to 40 menu items</li>
+            <li>Two menu updates in the first 30 days</li>
+          </ul>
+          <a class="button primary full" href="#request">Request a sample page <span aria-hidden="true">→</span></a>
+          <p class="small">No obligation. We’ll review your current menu first.</p>
+        </div>
+      </section>
+
+      <section class="request" id="request">
+        <p class="eyebrow">Pilot enquiry</p>
+        <h2>Want to see your menu in this format?</h2>
+        <p>Leave the best business contact. We’ll reply with a no-cost sample layout before asking you to buy.</p>
+        <form id="lead-form" action="https://formsubmit.co/eshtechz3@gmail.com" method="post">
+          <input type="hidden" name="_subject" value="New MenuMint pilot enquiry" />
+          <input type="hidden" name="_template" value="table" />
+          <input class="honeypot" type="text" name="_honey" tabindex="-1" autocomplete="off" />
+          <label>Restaurant name<input required name="restaurant" autocomplete="organization" placeholder="e.g. Kapi House" /></label>
+          <label>City<input required name="city" autocomplete="address-level2" placeholder="e.g. Bengaluru" /></label>
+          <label>Business email or WhatsApp number<input required name="contact" placeholder="Your preferred contact" /></label>
+          <label>Menu link (optional)<input name="menu" type="url" placeholder="https://…" /></label>
+          <button class="button primary" type="submit">Request a sample page <span aria-hidden="true">→</span></button>
+          <p class="form-note" id="form-note" role="status">Your details are used only to reply to this enquiry.</p>
+        </form>
+      </section>
+    </main>
+    <footer><a class="wordmark" href="/">Menu<span>Mint</span></a><p>Direct ordering, made simple.</p></footer>
+    <script src="app.js"></script>
+  </body>
+</html>
