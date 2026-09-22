@@ -41,3 +41,4 @@ Status: research complete; MVP deliberately not started pending founder review o
 | Date | Channel | Visitors | Leads | Sales | Revenue | Notes |
 |---|---:|---:|---:|---:|---:|---|
 | 2026-09-22 | MVP build | 0 | 0 | 0 | ₹0 | Restaurant offer approved. Landing page and interactive sample menu built locally; enquiry form is now connected to the owner-provided inbox. Publication awaits a usable GitHub publishing route. |
+| 2026-09-22 | Publication | 0 | 0 | 0 | ₹0 | MVP pushed to https://github.com/EshtechZ/menumint with an automated GitHub Pages deployment workflow. GitHub Pages publishing source still needs to be enabled by the account owner. |
