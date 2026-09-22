@@ -13,7 +13,7 @@ Static landing page and live sample menu for the Restaurant Direct-Order Starter
 ## Before publishing
 
 1. The enquiry form is connected to the owner-controlled inbox. Its first submission will send an activation link to the inbox; approve that link before public launch.
-2. Publish the folder through a free static host, ideally GitHub Pages.
+2. Publish the `main` branch root through GitHub Pages.
 3. Add the host's free analytics script or enable its built-in web analytics.
 4. Test one form submission and one demo order click.
 
