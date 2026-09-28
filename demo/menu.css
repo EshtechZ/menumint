@@ -1,1 +1,140 @@
-:root{--ink:#16352d;--lime:#d7f35b;--cream:#fbf8f1;--muted:#68756f;--line:#dde1da;--white:#fffefa;--orange:#f27a3e}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,Helvetica,sans-serif}body.locked{overflow:hidden}header,main,nav,footer{max-width:760px;margin:auto;padding-inline:22px}.restaurant-head{display:flex;gap:15px;align-items:center;padding-top:34px;padding-bottom:24px}.brand-mark{display:grid;place-items:center;width:50px;height:50px;border-radius:14px;background:var(--ink);color:var(--lime);font-weight:900;font-size:14px}.demo-label,.label{margin:0 0 8px;color:#577056;font-size:10px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase}.restaurant-head h1{margin:0 0 3px;font-family:Georgia,serif;font-size:34px;font-style:italic;letter-spacing:-1.8px}.restaurant-head span{color:var(--muted);font-size:13px}.categories{position:sticky;top:0;z-index:10;display:flex;gap:8px;overflow:auto;padding-top:12px;padding-bottom:12px;background:rgba(251,248,241,.96);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.categories a{padding:8px 13px;border-radius:20px;color:var(--ink);font-size:12px;font-weight:800;text-decoration:none;white-space:nowrap}.categories a.active{background:var(--ink);color:var(--lime)}main{padding-bottom:130px}.menu-section{padding-top:42px}.menu-section h2{margin:0 0 17px;font-size:28px;letter-spacing:-1.2px}.menu-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.menu-card{overflow:hidden;border:1px solid var(--line);border-radius:16px;background:var(--white);box-shadow:0 6px 18px rgba(22,53,45,.07);transition:transform .18s,box-shadow .18s}.menu-card:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(22,53,45,.11)}.food-art{height:118px;display:block;position:relative;overflow:hidden;background:#eee5d7}.food-art img{width:100%;height:100%;display:block;object-fit:cover;transition:transform .35s ease}.menu-card:hover .food-art img{transform:scale(1.04)}.food-art:after{content:'VEG';position:absolute;right:10px;top:10px;padding:4px 7px;border:1px solid #6d8d65;border-radius:999px;background:rgba(255,255,255,.9);color:#477044;font-size:8px;font-weight:900;letter-spacing:.8px}.toast{background:#efe2ca}.bowl{background:#dfe8d6}.sando{background:#ead9c9}.cauliflower{background:#dce6d9}.coffee{background:#ded3c8}.fizz{background:#e4d8e5}.cake{background:#eadccf}.item-body{padding:14px}.item-copy h3{margin:0 0 5px;font-size:15px;line-height:1.2;letter-spacing:-.3px}.item-copy p{min-height:36px;margin:0 0 9px;color:var(--muted);font-size:12px;line-height:1.4}.item-copy em{padding:4px 6px;background:#e4efdf;border-radius:10px;color:#3e623e;font-size:9px;font-style:normal;font-weight:800}.item-action{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:13px}.item-action strong{font-size:14px;letter-spacing:-.2px}.item-action{padding-top:2px}.add-btn{position:relative;min-width:76px;padding:9px 14px;border:1px solid var(--ink);border-radius:999px;background:var(--white);color:var(--ink);font-size:11px;font-weight:900;letter-spacing:.2px;cursor:pointer;box-shadow:0 2px 0 rgba(22,53,45,.12);transition:transform .15s,background .15s,box-shadow .15s}.add-btn:after{content:' +';font-size:13px;color:var(--orange)}.add-btn:hover{background:var(--lime);transform:translateY(-1px);box-shadow:0 4px 10px rgba(22,53,45,.12)}.add-btn:active{transform:translateY(0);box-shadow:none}.add-btn.added{background:var(--ink);color:var(--lime)}.cart-bar{position:fixed;right:0;bottom:0;left:0;z-index:20;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px max(22px,calc((100vw - 716px)/2));background:var(--ink);color:white;box-shadow:0 -6px 20px rgba(0,0,0,.12);font-size:13px}.cart-bar button,.whatsapp{border:0;border-radius:8px;background:var(--lime);color:var(--ink);font-weight:900;cursor:pointer}.cart-bar button{padding:11px 15px}.cart-bar b{padding-left:8px}.cart-sheet{position:fixed;inset:0;z-index:30;visibility:hidden}.cart-sheet.open{visibility:visible}.sheet-backdrop{position:absolute;inset:0;background:rgba(10,25,20,.45);opacity:0;transition:.2s}.sheet{position:absolute;right:0;bottom:0;left:0;max-width:760px;margin:auto;padding:24px 22px 28px;background:var(--cream);border-radius:20px 20px 0 0;transform:translateY(100%);transition:.25s;box-shadow:0 -10px 35px rgba(0,0,0,.16)}.cart-sheet.open .sheet{transform:translateY(0)}.cart-sheet.open .sheet-backdrop{opacity:1}.sheet-head{display:flex;justify-content:space-between;align-items:flex-start}.sheet-head h2{margin:0 0 15px;font-size:27px}.close{width:34px;height:34px;border:1px solid var(--line);border-radius:50%;background:var(--white);font-size:22px;cursor:pointer}.cart-items{max-height:40vh;overflow:auto}.cart-item{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:14px 0;border-top:1px solid var(--line)}.cart-item>div:first-child{display:grid;gap:3px}.cart-item span{color:var(--muted);font-size:11px}.qty{display:flex;align-items:center;gap:10px}.qty button{width:30px;height:30px;border:1px solid var(--line);border-radius:7px;background:var(--white);color:var(--ink);font-size:17px;cursor:pointer}.empty-cart{padding:25px 0;color:var(--muted);font-size:13px}.cart-summary{display:flex;justify-content:space-between;padding:18px 0;border-top:1px solid var(--line);font-size:14px}.whatsapp{width:100%;padding:15px;font-size:14px}.whatsapp b{float:right}.sheet-note{margin:11px 0 0;text-align:center;color:var(--muted);font-size:10px}.sheet-note+*{}footer{padding-top:25px;padding-bottom:35px;border-top:1px solid var(--line);color:var(--muted);font-size:11px;text-align:center}footer strong{color:var(--ink)}@media(max-width:560px){.menu-grid{grid-template-columns:1fr}.food-art{height:105px}.restaurant-head h1{font-size:30px}.cart-bar{padding-inline:18px}}
+:root{
+  --ink:#24352f;
+  --ink-soft:#40534b;
+  --accent:#b86b43;
+  --accent-dark:#965437;
+  --sage:#dce4d8;
+  --cream:#f7f3eb;
+  --paper:#fffdf8;
+  --muted:#718078;
+  --line:#e4ded3;
+  --white:#fffefa;
+  --shadow:0 10px 30px rgba(36,53,47,.08);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+body.locked{overflow:hidden}
+header,main,nav,footer{max-width:760px;margin:auto;padding-inline:22px}
+
+/* Restaurant header */
+.restaurant-head{
+  position:relative;display:flex;gap:16px;align-items:center;
+  padding-top:34px;padding-bottom:26px
+}
+.restaurant-head:after{
+  content:"";position:absolute;right:22px;top:24px;width:92px;height:92px;
+  border-radius:50%;background:var(--sage);opacity:.55;z-index:-1
+}
+.brand-mark{
+  display:grid;place-items:center;width:54px;height:54px;border-radius:17px;
+  background:var(--ink);color:#f1e6c9;font-weight:900;font-size:13px;
+  letter-spacing:.5px;box-shadow:0 8px 20px rgba(36,53,47,.14)
+}
+.demo-label,.label{margin:0 0 7px;color:var(--accent);font-size:10px;font-weight:850;letter-spacing:1.7px;text-transform:uppercase}
+.restaurant-head h1{
+  margin:0 0 4px;font-family:Georgia,"Times New Roman",serif;font-size:35px;
+  font-weight:500;font-style:italic;letter-spacing:-1.8px
+}
+.restaurant-head span{color:var(--muted);font-size:12px}
+
+/* Category navigation */
+.categories{
+  position:sticky;top:0;z-index:10;display:flex;gap:7px;overflow:auto;
+  padding-top:11px;padding-bottom:11px;background:rgba(247,243,235,.94);
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  backdrop-filter:blur(14px)
+}
+.categories::-webkit-scrollbar{display:none}
+.categories a{
+  padding:9px 15px;border:1px solid transparent;border-radius:999px;
+  color:var(--ink-soft);font-size:12px;font-weight:800;text-decoration:none;white-space:nowrap;
+  transition:.18s ease
+}
+.categories a.active{background:var(--ink);color:#f4e9c9;box-shadow:0 4px 12px rgba(36,53,47,.12)}
+.categories a:not(.active):hover{border-color:var(--line);background:var(--paper)}
+
+/* Menu */
+main{padding-bottom:132px}
+.menu-section{padding-top:42px}
+.menu-section h2{
+  margin:0 0 18px;font-family:Georgia,"Times New Roman",serif;font-size:29px;
+  font-weight:500;letter-spacing:-1px
+}
+.menu-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.menu-card{
+  overflow:hidden;border:1px solid var(--line);border-radius:20px;background:var(--paper);
+  box-shadow:var(--shadow);transition:transform .22s ease,box-shadow .22s ease
+}
+.menu-card:hover{transform:translateY(-3px);box-shadow:0 16px 34px rgba(36,53,47,.12)}
+.food-art{height:148px;display:block;position:relative;overflow:hidden;background:#e8dfd1}
+.food-art img{width:100%;height:100%;display:block;object-fit:cover;transition:transform .45s ease}
+.menu-card:hover .food-art img{transform:scale(1.045)}
+.food-art:before{
+  content:"";position:absolute;inset:0;z-index:1;
+  background:linear-gradient(180deg,rgba(0,0,0,0) 55%,rgba(24,32,28,.16))
+}
+.food-art:after{
+  content:"VEG";position:absolute;z-index:2;right:11px;top:11px;
+  padding:5px 8px;border:1px solid rgba(69,104,62,.35);border-radius:999px;
+  background:rgba(255,253,248,.9);color:#477044;font-size:8px;font-weight:900;letter-spacing:1px;
+  box-shadow:0 3px 10px rgba(0,0,0,.08)
+}
+.item-body{padding:16px}
+.item-copy h3{margin:0 0 6px;font-family:Georgia,"Times New Roman",serif;font-size:17px;font-weight:600;line-height:1.18;letter-spacing:-.35px}
+.item-copy p{min-height:35px;margin:0 0 10px;color:var(--muted);font-size:11.5px;line-height:1.45}
+.item-copy em{padding:4px 7px;background:#e7efe3;border-radius:999px;color:#456442;font-size:8.5px;font-style:normal;font-weight:850;letter-spacing:.2px}
+.item-action{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:15px}
+.item-action strong{font-size:14px;letter-spacing:-.2px}
+.add-btn{
+  min-width:78px;padding:9px 14px;border:1px solid var(--ink);border-radius:999px;
+  background:transparent;color:var(--ink);font-size:11px;font-weight:900;letter-spacing:.2px;
+  cursor:pointer;box-shadow:0 2px 0 rgba(36,53,47,.1);transition:.16s ease
+}
+.add-btn:after{content:"  +";font-size:13px;color:var(--accent)}
+.add-btn:hover{background:var(--ink);color:#f4e9c9;transform:translateY(-1px);box-shadow:0 6px 14px rgba(36,53,47,.14)}
+.add-btn:hover:after{color:#f4e9c9}
+.add-btn:active{transform:translateY(0);box-shadow:none}
+.add-btn.added{background:var(--accent);border-color:var(--accent);color:white}
+.add-btn.added:after{color:white}
+
+/* Cart */
+.cart-bar{
+  position:fixed;right:0;bottom:0;left:0;z-index:20;display:flex;align-items:center;
+  justify-content:space-between;gap:12px;padding:12px max(22px,calc((100vw - 716px)/2));
+  background:rgba(36,53,47,.97);color:white;box-shadow:0 -8px 25px rgba(0,0,0,.12);
+  font-size:13px;backdrop-filter:blur(12px)
+}
+.cart-bar button,.whatsapp{border:0;border-radius:999px;background:#e9d9ad;color:var(--ink);font-weight:900;cursor:pointer}
+.cart-bar button{padding:11px 17px}.cart-bar b{padding-left:8px}
+.cart-sheet{position:fixed;inset:0;z-index:30;visibility:hidden}
+.cart-sheet.open{visibility:visible}
+.sheet-backdrop{position:absolute;inset:0;background:rgba(12,24,19,.48);opacity:0;transition:.2s}
+.sheet{
+  position:absolute;right:0;bottom:0;left:0;max-width:760px;margin:auto;padding:25px 22px 29px;
+  background:var(--cream);border-radius:24px 24px 0 0;transform:translateY(100%);
+  transition:.25s;box-shadow:0 -14px 40px rgba(0,0,0,.18)
+}
+.cart-sheet.open .sheet{transform:translateY(0)}
+.cart-sheet.open .sheet-backdrop{opacity:1}
+.sheet-head{display:flex;justify-content:space-between;align-items:flex-start}
+.sheet-head h2{margin:0 0 15px;font-family:Georgia,"Times New Roman",serif;font-weight:500;font-size:28px}
+.close{width:36px;height:36px;border:1px solid var(--line);border-radius:50%;background:var(--paper);color:var(--ink);font-size:21px;cursor:pointer}
+.cart-items{max-height:40vh;overflow:auto}
+.cart-item{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:14px 0;border-top:1px solid var(--line)}
+.cart-item>div:first-child{display:grid;gap:3px}.cart-item span{color:var(--muted);font-size:11px}
+.qty{display:flex;align-items:center;gap:10px}.qty button{width:30px;height:30px;border:1px solid var(--line);border-radius:8px;background:var(--paper);color:var(--ink);font-size:17px;cursor:pointer}
+.empty-cart{padding:25px 0;color:var(--muted);font-size:13px}
+.cart-summary{display:flex;justify-content:space-between;padding:18px 0;border-top:1px solid var(--line);font-size:14px}
+.whatsapp{width:100%;padding:15px;font-size:14px;background:#dce9cf}.whatsapp b{float:right}
+.sheet-note{margin:11px 0 0;text-align:center;color:var(--muted);font-size:10px}
+
+/* Footer */
+footer{padding-top:25px;padding-bottom:35px;border-top:1px solid var(--line);color:var(--muted);font-size:11px;text-align:center}
+footer strong{color:var(--ink)}
+@media(max-width:560px){
+  .menu-grid{grid-template-columns:1fr}
+  .food-art{height:190px}
+  .restaurant-head h1{font-size:30px}
+  .cart-bar{padding-inline:18px}
+}
