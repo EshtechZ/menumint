@@ -1,21 +1,110 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Sample mobile menu for a restaurant." />
-    <title>The Corner Table — Sample Menu</title>
-    <link rel="stylesheet" href="menu.css" />
-  </head>
-  <body>
-    <header><p>MENU DEMO</p><h1>the corner table</h1><span>All-day kitchen · Bengaluru</span></header>
-    <nav><a href="#popular">Popular</a><a href="#mains">Mains</a><a href="#drinks">Drinks</a></nav>
-    <main>
-      <section id="popular"><p class="label">Most loved</p><h2>Popular today</h2><div class="item"><div><h3>Truffle mushroom toast</h3><p>Herbs, sourdough, parmesan</p><em>Vegetarian</em></div><strong>₹349</strong></div><div class="item"><div><h3>Paneer tikka bowl</h3><p>Charred vegetables, mint rice, lemon</p><em>Vegetarian</em></div><strong>₹399</strong></div></section>
-      <section id="mains"><p class="label">All-day kitchen</p><h2>Mains</h2><div class="item"><div><h3>Chicken katsu sando</h3><p>Milk bread, slaw, yuzu mayo</p></div><strong>₹420</strong></div><div class="item"><div><h3>Roasted cauliflower bowl</h3><p>Tahini, chickpeas, brown rice</p><em>Vegan</em></div><strong>₹370</strong></div></section>
-      <section id="drinks"><p class="label">Coffee & coolers</p><h2>Drinks</h2><div class="item"><div><h3>Cold brew tonic</h3><p>Single-origin coffee, citrus tonic</p></div><strong>₹220</strong></div><div class="item"><div><h3>Hibiscus fizz</h3><p>Hibiscus, lime, sparkling water</p><em>Vegan</em></div><strong>₹180</strong></div></section>
-    </main>
-    <aside><span>Ready to order?</span><button id="order">Start an order on WhatsApp <b>→</b></button></aside>
-    <script src="menu.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Interactive sample restaurant menu built by MenuMint." />
+  <title>The Corner Table — Menu Demo</title>
+  <link rel="stylesheet" href="menu.css" />
+</head>
+<body>
+  <header class="restaurant-head">
+    <div class="brand-mark">CT</div>
+    <div>
+      <p class="demo-label">MENU DEMO</p>
+      <h1>the corner table</h1>
+      <span>All-day kitchen · Bengaluru</span>
+    </div>
+  </header>
+
+  <nav class="categories" aria-label="Menu categories">
+    <a class="active" href="#popular">Popular</a>
+    <a href="#mains">Mains</a>
+    <a href="#drinks">Drinks</a>
+    <a href="#desserts">Desserts</a>
+  </nav>
+
+  <main>
+    <section id="popular" class="menu-section">
+      <p class="label">Most loved</p>
+      <h2>Popular today</h2>
+      <div class="menu-grid">
+        <article class="menu-card" data-name="Truffle mushroom toast" data-price="349">
+          <div class="food-art toast" aria-hidden="true">🍄</div>
+          <div class="item-body">
+            <div class="item-copy"><h3>Truffle mushroom toast</h3><p>Herbs, sourdough, parmesan</p><em>Vegetarian</em></div>
+            <div class="item-action"><strong>₹349</strong><button class="add-btn" type="button">Add</button></div>
+          </div>
+        </article>
+        <article class="menu-card" data-name="Paneer tikka bowl" data-price="399">
+          <div class="food-art bowl" aria-hidden="true">🥗</div>
+          <div class="item-body">
+            <div class="item-copy"><h3>Paneer tikka bowl</h3><p>Charred vegetables, mint rice, lemon</p><em>Vegetarian</em></div>
+            <div class="item-action"><strong>₹399</strong><button class="add-btn" type="button">Add</button></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="mains" class="menu-section">
+      <p class="label">All-day kitchen</p>
+      <h2>Mains</h2>
+      <div class="menu-grid">
+        <article class="menu-card" data-name="Chicken katsu sando" data-price="420">
+          <div class="food-art sando" aria-hidden="true">🥪</div>
+          <div class="item-body"><div class="item-copy"><h3>Chicken katsu sando</h3><p>Milk bread, slaw, yuzu mayo</p></div><div class="item-action"><strong>₹420</strong><button class="add-btn" type="button">Add</button></div></div>
+        </article>
+        <article class="menu-card" data-name="Roasted cauliflower bowl" data-price="370">
+          <div class="food-art cauliflower" aria-hidden="true">🥦</div>
+          <div class="item-body"><div class="item-copy"><h3>Roasted cauliflower bowl</h3><p>Tahini, chickpeas, brown rice</p><em>Vegan</em></div><div class="item-action"><strong>₹370</strong><button class="add-btn" type="button">Add</button></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="drinks" class="menu-section">
+      <p class="label">Coffee & coolers</p>
+      <h2>Drinks</h2>
+      <div class="menu-grid">
+        <article class="menu-card" data-name="Cold brew tonic" data-price="220">
+          <div class="food-art coffee" aria-hidden="true">☕</div>
+          <div class="item-body"><div class="item-copy"><h3>Cold brew tonic</h3><p>Single-origin coffee, citrus tonic</p></div><div class="item-action"><strong>₹220</strong><button class="add-btn" type="button">Add</button></div></div>
+        </article>
+        <article class="menu-card" data-name="Hibiscus fizz" data-price="180">
+          <div class="food-art fizz" aria-hidden="true">🥤</div>
+          <div class="item-body"><div class="item-copy"><h3>Hibiscus fizz</h3><p>Hibiscus, lime, sparkling water</p><em>Vegan</em></div><div class="item-action"><strong>₹180</strong><button class="add-btn" type="button">Add</button></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="desserts" class="menu-section">
+      <p class="label">Something sweet</p>
+      <h2>Desserts</h2>
+      <div class="menu-grid">
+        <article class="menu-card" data-name="Burnt cheesecake" data-price="280">
+          <div class="food-art cake" aria-hidden="true">🍰</div>
+          <div class="item-body"><div class="item-copy"><h3>Burnt cheesecake</h3><p>Vanilla, berry compote</p></div><div class="item-action"><strong>₹280</strong><button class="add-btn" type="button">Add</button></div></div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <div class="cart-bar" id="cart-bar" hidden>
+    <div><span id="cart-count">0</span> items · <strong id="cart-total">₹0</strong></div>
+    <button id="view-cart" type="button">View order <b>→</b></button>
+  </div>
+
+  <div class="cart-sheet" id="cart-sheet" aria-hidden="true">
+    <div class="sheet-backdrop" id="close-cart"></div>
+    <section class="sheet" role="dialog" aria-modal="true" aria-labelledby="cart-title">
+      <div class="sheet-head"><div><p class="label">Your order</p><h2 id="cart-title">Ready to order?</h2></div><button class="close" id="close-cart-button" type="button" aria-label="Close">×</button></div>
+      <div id="cart-items" class="cart-items"></div>
+      <div class="cart-summary"><span>Subtotal</span><strong id="sheet-total">₹0</strong></div>
+      <button class="whatsapp" id="order" type="button">Send order on WhatsApp <b>→</b></button>
+      <p class="sheet-note">This demo creates the WhatsApp message your restaurant team would receive.</p>
+    </section>
+  </div>
+
+  <footer>Powered by <strong>MenuMint</strong> · Sample experience</footer>
+  <script src="menu.js"></script>
+</body>
 </html>
