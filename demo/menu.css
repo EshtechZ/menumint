@@ -138,3 +138,13 @@ footer strong{color:var(--ink)}
   .restaurant-head h1{font-size:30px}
   .cart-bar{padding-inline:18px}
 }
+
+.restaurant-head{overflow:hidden;isolation:isolate;min-height:190px}
+.hero-copy{position:relative;z-index:2}
+.live-pill{display:inline-flex;align-items:center;gap:7px;margin-bottom:12px;padding:6px 10px;border:1px solid rgba(72,96,82,.16);border-radius:999px;background:rgba(255,253,248,.72);color:var(--ink-soft);font-size:9px;font-weight:850;letter-spacing:.5px}
+.live-pill i{width:6px;height:6px;border-radius:50%;background:#5d8b57;box-shadow:0 0 0 3px rgba(93,139,87,.13)}
+.hero-meta{display:flex;gap:9px;align-items:center;margin-top:11px;color:var(--muted);font-size:10px;font-weight:700}
+.hero-meta span:first-child{color:var(--accent-dark)}
+.restaurant-head:before{content:"";position:absolute;right:-42px;top:12px;width:210px;height:210px;border-radius:50%;background:linear-gradient(135deg,#dce4d8,#efe4cf);z-index:0}
+.restaurant-head:after{content:"";position:absolute;right:23px;top:47px;width:122px;height:122px;border-radius:50%;border:1px solid rgba(72,96,82,.12);background:rgba(255,253,248,.28);z-index:1}
+@media(max-width:560px){.restaurant-head{min-height:185px}.restaurant-head:before{right:-65px}.restaurant-head:after{right:5px}}
