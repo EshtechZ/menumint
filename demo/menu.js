@@ -36,6 +36,22 @@ function add(name, price) {
   const existing = cart.get(name);
   cart.set(name, { name, price, qty: existing ? existing.qty + 1 : 1 });
   render();
+  updateAddButtons();
+}
+
+function updateAddButtons() {
+  document.querySelectorAll('.menu-card').forEach(card => {
+    const button = card.querySelector('.add-btn');
+    const item = cart.get(card.dataset.name);
+    if (!button) return;
+    if (item) {
+      button.textContent = 'Added ' + item.qty + ' ✓';
+      button.classList.add('added');
+    } else {
+      button.textContent = 'Add';
+      button.classList.remove('added');
+    }
+  });
 }
 
 document.querySelectorAll('.add-btn').forEach(button => {
@@ -43,7 +59,7 @@ document.querySelectorAll('.add-btn').forEach(button => {
     const card = button.closest('.menu-card');
     add(card.dataset.name, Number(card.dataset.price));
     button.textContent = 'Added ✓'; button.classList.add('added');
-    setTimeout(() => { button.textContent = 'Add'; button.classList.remove('added'); }, 900);
+    updateAddButtons();
   });
 });
 
@@ -55,6 +71,7 @@ cartItems.addEventListener('click', event => {
   item.qty += button.dataset.action === 'plus' ? 1 : -1;
   if (item.qty <= 0) cart.delete(item.name);
   render();
+  updateAddButtons();
 });
 
 function openCart() {
