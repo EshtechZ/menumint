@@ -148,3 +148,13 @@ footer strong{color:var(--ink)}
 .restaurant-head:before{content:"";position:absolute;right:-42px;top:12px;width:210px;height:210px;border-radius:50%;background:linear-gradient(135deg,#dce4d8,#efe4cf);z-index:0}
 .restaurant-head:after{content:"";position:absolute;right:23px;top:47px;width:122px;height:122px;border-radius:50%;border:1px solid rgba(72,96,82,.12);background:rgba(255,253,248,.28);z-index:1}
 @media(max-width:560px){.restaurant-head{min-height:185px}.restaurant-head:before{right:-65px}.restaurant-head:after{right:5px}}
+
+
+.home-link{position:absolute;left:22px;top:12px;z-index:5;color:var(--muted);font-size:10px;font-weight:800;text-decoration:none;padding:6px 9px;border:1px solid var(--line);border-radius:999px;background:rgba(255,253,248,.8);backdrop-filter:blur(8px)}
+.home-link:hover{color:var(--ink);background:var(--paper)}
+.restaurant-head{padding-top:55px}
+.add-btn.added{display:inline-flex;align-items:center;justify-content:space-between;gap:11px;min-width:82px;padding:7px 9px;background:var(--ink);border-color:var(--ink);color:#f4e9c9}
+.add-btn.added span{display:grid;place-items:center;width:20px;height:20px;border-radius:50%;background:rgba(255,255,255,.1);font-size:16px;line-height:1}
+.add-btn.added b{font-size:11px;color:#fff;font-weight:900;min-width:12px;text-align:center}
+.add-btn.added:after{display:none}
+@media(max-width:560px){.home-link{left:18px}.restaurant-head{padding-top:52px}}
