@@ -42,8 +42,8 @@ document.querySelectorAll('.add-btn').forEach(button => {
   button.addEventListener('click', () => {
     const card = button.closest('.menu-card');
     add(card.dataset.name, Number(card.dataset.price));
-    button.textContent = 'Added ✓';
-    setTimeout(() => button.textContent = 'Add', 900);
+    button.textContent = 'Added ✓'; button.classList.add('added');
+    setTimeout(() => { button.textContent = 'Add'; button.classList.remove('added'); }, 900);
   });
 });
 
