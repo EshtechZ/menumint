@@ -45,19 +45,30 @@ function updateAddButtons() {
     const item = cart.get(card.dataset.name);
     if (!button) return;
     if (item) {
-      button.textContent = 'Added ' + item.qty + ' ✓';
+      button.innerHTML = '<span data-card-action="minus">−</span><b>' + item.qty + '</b><span data-card-action="plus">+</span>';
       button.classList.add('added');
     } else {
-      button.textContent = 'Add';
+      button.textContent = 'Add +';
       button.classList.remove('added');
     }
   });
 }
 
 document.querySelectorAll('.add-btn').forEach(button => {
-  button.addEventListener('click', () => {
+  button.addEventListener('click', event => {
     const card = button.closest('.menu-card');
-    add(card.dataset.name, Number(card.dataset.price));
+    const name = card.dataset.name;
+    const price = Number(card.dataset.price);
+    const item = cart.get(name);
+    const action = event.target.closest('[data-card-action]')?.dataset.cardAction;
+    if (action && item) {
+      item.qty += action === 'plus' ? 1 : -1;
+      if (item.qty <= 0) cart.delete(name);
+      render();
+      updateAddButtons();
+      return;
+    }
+    add(name, price);
     button.textContent = 'Added ✓'; button.classList.add('added');
     updateAddButtons();
   });
